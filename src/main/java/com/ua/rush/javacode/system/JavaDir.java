@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -15,8 +15,8 @@ public class JavaDir {
   private Integer level;
   private String name;
 
-  private Set<JavaDir> dirs = new HashSet<>();
-  private Set<JavaFile> files = new HashSet<>();
+  private List<JavaDir> dirs = new ArrayList<>();
+  private List<JavaFile> files = new ArrayList<>();
 
   public JavaDir(java.io.File dir) {
     this(dir, 0);
