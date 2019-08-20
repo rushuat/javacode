@@ -18,7 +18,7 @@ public class JavaDir {
   private List<JavaDir> dirs = new ArrayList<>();
   private List<JavaFile> files = new ArrayList<>();
 
-  public JavaDir(java.io.File dir) {
+  public JavaDir(File dir) {
     this(dir, 0);
   }
 

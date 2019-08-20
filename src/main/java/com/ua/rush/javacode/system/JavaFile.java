@@ -2,6 +2,7 @@ package com.ua.rush.javacode.system;
 
 import com.ua.rush.javacode.body.JavaBody;
 import java.io.DataInputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.UncheckedIOException;
@@ -11,7 +12,7 @@ public class JavaFile {
   private String name;
   private JavaBody body;
 
-  public JavaFile(java.io.File file) {
+  public JavaFile(File file) {
     try (
         FileInputStream fis = new FileInputStream(file);
         DataInputStream dis = new DataInputStream(fis)
