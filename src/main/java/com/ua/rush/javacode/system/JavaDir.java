@@ -30,7 +30,7 @@ public class JavaDir {
           .map(Path::toFile)
           .forEach(file -> {
             if (file.isFile()) {
-              if (file.getName().contains(".java")) {
+              if (file.getName().endsWith(".java")) {
                 files.add(new JavaFile(file));
               }
             } else {
